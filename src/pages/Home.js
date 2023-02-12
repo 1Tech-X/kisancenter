@@ -9,8 +9,8 @@ const Home = () => {
         <TopHeader />
         <MidHeader />
         <NavbarMenu />
-         <Container>
-        </Container>
+        <Container>
+       </Container>
     </div>
   )
 }
