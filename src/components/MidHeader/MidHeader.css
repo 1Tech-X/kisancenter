@@ -1,0 +1,15 @@
+.mid-header{
+    padding: 25px 0;
+}
+.logo {
+    padding: 28px 0;
+}
+.float-right{
+    float: right !important;
+}
+.header-right {
+    float: right;
+}
+.header.text-center {
+    padding: 10px 0;
+ }
