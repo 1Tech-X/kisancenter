@@ -1,0 +1,34 @@
+.service-main{
+    position: relative;
+}
+.service-main a{
+text-decoration: none;
+color: rgb(36, 35, 35);
+}
+.sericescard{
+    padding: auto;
+}
+.sericescard .card-text{
+    font-size: 18px;
+}
+.service-main .owl-theme  .owl-prev, .service-main .owl-theme .owl-next {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px !important;
+    color: red;
+    background: #018f0d;
+    border: none;
+    bottom: 70px;
+    z-index: 100;
+  }
+  .service-main .owl-theme .owl-prev i, .service-main .owl-theme .owl-next i {
+    font-size: 2rem;
+    color: #018f0d;
+  }
+  .service-main .owl-theme  .owl-prev {
+    left: -25px;
+  }
+  .service-main .owl-theme  .owl-next {
+    right: -25px;
+  }

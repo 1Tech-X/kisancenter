@@ -1,0 +1,17 @@
+.top-bar {
+    border-bottom: 1px solid #dedede;
+    color: #a3a3a3;
+    font-size: 13px;
+    height: 30px;
+    
+}
+.top-bar .btn {
+    height: 25px;
+    margin-top: 5px;
+    padding-top: 2px;
+}
+@media(max-width:992px){
+    .top-bar .nav-link i{
+        display: none;
+    }
+}

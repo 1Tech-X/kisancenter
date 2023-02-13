@@ -1,0 +1,84 @@
+/* Trending Bar
+================================================== */
+
+.trending-bar {
+    background: #272727;
+    color: #fff;
+    padding: 10px 0;
+ }
+ 
+ .trending-title {
+    background: #ec0000;
+    color: #fff;
+    display: inline-block;
+    font-size: 11px;
+    padding: 5px 10px;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin: 0 20px 0 0;
+ }
+ 
+ .trending-bar .post-content,
+ .trending-light .post-content {
+    padding: 0;
+ }
+ 
+ .owl-carousel.owl-theme.trending-slide .owl-nav {
+    position: absolute;
+    right: 0;
+    top: -3px;
+    margin: 0;
+ }
+ 
+ .owl-carousel.owl-theme.trending-slide .owl-nav>div {
+    background: #ec0000;
+    border: 0;
+    color: #fff;
+ }
+ 
+ .owl-carousel.owl-theme.trending-slide .owl-nav>div:hover {
+    background: #fff;
+    border: 0;
+    color: #ec0000;
+ }
+ 
+ .trending-slide .post-title a {
+    color: #fff;
+ }
+ 
+ .trending-slide .post-title.title-small {
+    font-weight: 400;
+    margin: 0;
+ }
+ 
+ /* Trending light */
+ 
+ .trending-light {
+    color: #1c1c1c;
+    margin: 30px 0;
+    padding: 1em;
+    border: 1px solid #ec0000 ;
+ }
+ 
+ .trending-light .post-title {
+    font-weight: 600;
+    margin-top: 3px;
+    font-size: 15px;
+ }
+ 
+ .trending-light  a {
+    color: #1c1c1c;
+    text-decoration: none;
+ }
+ .trending-light  a:hover{
+    color: #ec0000 ;
+ }
+ 
+ .trending-light .trending-title {
+    padding: 8px 10px 7px;
+ }
+ 
+ .trending-light .owl-carousel.owl-theme.trending-slide .owl-nav>div:hover {
+    background: #333;
+    color: #fff;
+ }

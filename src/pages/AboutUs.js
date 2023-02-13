@@ -1,27 +1,23 @@
 import React from 'react'
+import CustomBreadCumb from '../components/CustomBreadCumb/CustomBreadCumb'
 import TopHeader from '../components/TopHeader/TopHeader'
 import MidHeader from '../components/MidHeader/MidHeader'
 import { Container } from 'react-bootstrap'
 import NavbarMenu from '../components/NavbarMenu/NavbarMenu'
 import Footer from '../components/Footer/Footer'
-import News from '../components/News/News'
-import OurServices from '../components/OurServices/OurServices'
-import Hero from '../components/Hero/Hero'
-const Home = () => {
+const AboutUs = () => {
   return (
     <div>
-        <TopHeader />
+     <TopHeader />
         <MidHeader />
         <NavbarMenu />
         <Container>
-          <Hero />
-          <News />
-          <OurServices />
+        <CustomBreadCumb breadname="About Us" />
        </Container>
-
        <Footer />
+
     </div>
   )
 }
 
-export default Home
+export default AboutUs
