@@ -7,7 +7,7 @@ const MidHeader = () => {
     <div>
       <Navbar  variant="light" bg="light" className='mid-header'>
         <Container>
-          <Row className='w-100-lg'>
+          <Row className='w-100'>
             <Col md={3} sm={12}className="p-2 ">
                 <Link to="/">
                 <Image src='images/logo.png'/>

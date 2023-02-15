@@ -7,16 +7,23 @@ import Footer from '../components/Footer/Footer'
 import News from '../components/News/News'
 import OurServices from '../components/OurServices/OurServices'
 import Hero from '../components/Hero/Hero'
-const Home = () => {
+import { Post } from '../components/Post/Post'
+const Home = (props) => {
   return (
     <div>
         <TopHeader />
         <MidHeader />
-        <NavbarMenu />
+        <NavbarMenu 
+     
+        
+        subscheme="subscheme"
+        
+       />
         <Container>
           <Hero />
           <News />
           <OurServices />
+          <Post />
        </Container>
 
        <Footer />
