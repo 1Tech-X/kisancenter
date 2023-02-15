@@ -1,50 +1,47 @@
 import React from 'react'
 import NewsTitle from './NewsTitle';
 import NewsThumbnail from './NewsThumbnail';
+import { Col, Row } from 'react-bootstrap';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
+import { CardActionArea } from '@mui/material';
 export const Post = () => {
   return (
     <div>
-        <div className="flex md:flex-row flex-col justify-around">
-                <div className="max-w-[400px] mx-4">
-                    <p className="text-2xl font-bold mb-4">Adani Group shares face carnage on Dalal Street; flagship Adani Enterprises crashes 26%</p>
-                    <div className="w-full">
-                        <img width="450px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToWk1PZ3UX8I9arjg6LkN9pGzpvHN4lK5lwQ&usqp=CAU" alt="" />
-                    </div>
-                    <p className="mt-4">Adani Enterprises, the flagship firm of the Adani Group, plunged over 26 per cent, triggering panic on Dalal Street just a day after the company’s Rs 20,000 crore FPO sailed through successfully.</p>
+        <Row className='mt-3 mb-2'>
+            <Col  md={4} sm={12} >
+            <Card sx={{ maxWidth: 345 }}>
+        
+      <CardActionArea  >
+      <Typography gutterBottom variant="h6" component="div" sx={{padding:'8px'}}>
+            Maharashtra Mukhyamantri Kisan Yojana 2023 आरम्भ करेगी सरकार, मिलेंगे हर साल 6000 रुपये
+    </Typography>
+        <CardMedia
+          component="img"
+          height="140"
+          image="https://cmhelpline.in/wp-content/uploads/2022/09/a6.webp"
+          alt="green iguana"
+        />
+        <CardContent>
 
-                    <p className="font-bold mt-4 text-xl">Asia Cup row: Pakistan wants its ODI World Cup matches too taken out of India</p>
-                    <div className="md:flex mt-4" >
-                        <img width="200px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnAcjbuGwM0Ff8M6T5K23hbgjuKNXCHHbKNA&usqp=CAU" alt=""/>
-                        <p className="md:ml-4">A final decision on Asia Cup venue will be taken in March when Asian Cricket Council reconvenes in Dubai</p>
-                    </div>
-                </div>
-                <div>
-                    <NewsThumbnail />
-                    <NewsThumbnail />
-                    <NewsThumbnail />
-                    <NewsThumbnail />
-                    <NewsThumbnail />
-                    <NewsThumbnail />
-                    <NewsThumbnail />
-                    <NewsThumbnail />
-                </div>
-                <div className="px-4">
-                    <NewsTitle />
-                    <NewsTitle />
-                    <NewsTitle />
-                    <NewsTitle />
-                    <NewsTitle />
-                    <NewsTitle />
-                    <NewsTitle />
-                    <NewsTitle />
-                </div>
-                <div className="md:h-[600px] md:flex-col md:flex md:w-[300px] h-[300px] mt-4">
-                    <div className="bg-gray-800 text-white h-1/2">Current Schemes</div>
-                    <div className="bg-orange-500 text-white h-1/2">Add</div>
-                </div>
-            </div>
-
-            <div className="bg-orange-500 mt-6 h-32 mx-4 text-white text-4xl text-center mb-12"> Add </div>
+          <Typography variant="body2"  color="text.secondary">
+            Lizards are a widespread group of squamate reptiles, with over 6,000
+            species, ranging across all continents except Antarctica
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </Card>
+            </Col>
+            <Col  md={4} sm={12} className="p-0">
+                <NewsThumbnail />
+            </Col>
+            <Col  md={2} sm={12} className="p-0">
+                <NewsTitle />
+            </Col>
+            <Col  md={2} sm={12} className="p-0"></Col>
+        </Row>
     </div>
   )
 }
