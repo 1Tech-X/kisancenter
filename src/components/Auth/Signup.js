@@ -43,7 +43,7 @@ const currencies = [
     label: 'Xerox Center',
   },
 ];
-const [name, setName] = useState("");
+const [name, setName] = useState('');
 const [result, setResult] = useState("");
 
 const [msg,setMsg]=useState("")
@@ -54,16 +54,18 @@ const handleChange = (e) => {
     
     $.ajax({
         type: "POST",
-        url: "https://kisancenter.com/register.php",
-        data: {domain:name},
+        url: "https://kisancenter.com/backend/registerdomain.php",
+        data: {domain: name},
         success(res) {
-          if(res==='admin'){
-            setResult(res+".kisancenter.com");
-            setMsg("success");
+          
+          if(res==='exist'){
+            setResult(name+".kisancenter.com already exist");
+            setMsg("error")
+            
           }
           else{
-            setResult("Not available");
-            setMsg("error")
+            setResult(name+".kisancenter.com available");
+            setMsg("success");
             
           }
             
@@ -167,8 +169,7 @@ const {current: reid} = useRef("KISAN" + (Math.random().toString(36).toUpperCase
           color={msg}
           fullWidth
           onChange={(event) => handleChange(event)}
-          value={name}
-          
+          value={ name}
           helperText={result}
           sx={{
             marginTop:'1.5rem'
