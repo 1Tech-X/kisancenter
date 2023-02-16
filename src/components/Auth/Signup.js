@@ -48,14 +48,13 @@ const [result, setResult] = useState("");
 
 const [msg,setMsg]=useState("")
 const handleChange = (e) => {
-  e.preventDefault();
     setName(e.target.value);
     
     
     $.ajax({
         type: "POST",
         url: "https://kisancenter.com/backend/registerdomain.php",
-        data: {domain: name},
+        data: {domain:name +".kisancenter.com"},
         success(res) {
           
           if(res==='exist'){
@@ -105,12 +104,12 @@ const {current: reid} = useRef("KISAN" + (Math.random().toString(36).toUpperCase
               The benefit of the component could be availed by women above 18 years of age in the following categories:
             </Typography>
             <ul className='mt-2'>
-                                                <li>Women who are deserted and are without any social and economic support;
-                                                </li>
-                                                <li>Women survivors of natural disasters who have been rendered homeless and are without any social and economic support;
-                                                </li>
-                                                <li>Women prisoners released from jail and are without family, social and economic support;
-                                                </li>
+             <li>Women who are deserted and are without any social and economic support;
+             </li>
+           <li>Women survivors of natural disasters who have been rendered homeless and are without any social and economic support;
+          </li>
+               <li>Women prisoners released from jail and are without family, social and economic support;
+                 </li>
                                                 <li>Women victims of domestic violence, family tension or discord, who are made to leave their homes without any means of subsistence and have no special protection from exploitation and/ or facing litigation on account of marital disputes; 
                                                 </li>
                                                 <li>Trafficked women/girls rescued or run away from brothels or other places where they face exploitation and Women affected by HIV/AIDS who do not have any social or economic support. However such women/ girls should first seek assistance under UJJAWALA Scheme in areas where it is in operation.
