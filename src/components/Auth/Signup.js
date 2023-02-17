@@ -14,6 +14,7 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
+import axios from 'axios';
 const Signup = (props) => {
   const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -43,13 +44,19 @@ const currencies = [
     label: 'Xerox Center',
   },
 ];
-const [name, setName] = useState('');
+const [name, setName] = useState("");
 const [result, setResult] = useState("");
 
 const [msg,setMsg]=useState("")
 const handleChange = (e) => {
     setName(e.target.value);
-    
+    //   axios
+    //   .post('https://kisancenter.com/backend/registerdomain.php', {
+    //     domain:name
+    //   })
+    //   .then((response) => {
+    //     console.log(response.data);
+    //   });
     
     $.ajax({
         type: "POST",
