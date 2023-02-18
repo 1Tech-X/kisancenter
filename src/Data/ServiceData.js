@@ -2,51 +2,61 @@ export const serviceapi = [
     {
         src:"/",
         img:"images/logo_123.png",
-        title:"Service name 1"
+        title:"बैंकिंग सेवाएं",
+        total:3
     },
     {
         src:"/",
         img:"images/logo_123.png",
-        title:"Service name 2"
+        title:"बीमा सेवाएं",
+        total:2
     },
     {
         src:"/",
         img:"images/logo_123.png",
-        title:"Service name 3"
+        title:"वित्तीय सेवाएं",
+        total:2
     },
     {
         src:"/",
         img:"images/logo_123.png",
-        title:"Service name 4"
+        title:"कृषि",
+        total:1
     },
     {
         src:"/",
         img:"images/logo_123.png",
-        title:"Service name 5"
+        title:"अनुसूचित जनजाति",
+        total:5
     },
     {
         src:"/",
         img:"images/logo_123.png",
-        title:"Service name 6"
+        title:"Service name 6",
+        total:6
     },
     {
         src:"/",
         img:"images/logo_123.png",
-        title:"Service name 7"
+        title:"Service name 7",
+        total:2
     },
     {
         src:"/",
         img:"images/logo_123.png",
-        title:"Service name 8"
+        title:"Service name 8",
+        total:0
     },
     {
         src:"/",
         img:"images/logo_123.png",
-        title:"Service name 9"
+        title:"Service name 9",
+        total:7
     },
     {
         src:"/",
         img:"images/logo_123.png",
-        title:"Service name 10"
+        title:"Service name 10",
+        total:10
     }
     ]

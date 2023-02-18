@@ -1,28 +1,28 @@
 export const SchemeNameData=[
     {
-        schemeName:"Scheme 1",
+        schemeName:"बैंकिंग सेवाएं",
         subname:"subname 1",
-        path:"/"
+        path:"/",
+        number:4
     },
     {
-        schemeName:"Scheme 2",
+        schemeName:"बीमा सेवाएं",
         subname:"subname 2",
-        path:"/"
+        path:"/",
+        number:5
     },
     {
         schemeName:"Scheme 3",
         subname:"subname 3",
-        path:"/"
+        path:"/",
+        number:7
     },
     {
-        schemeName:"Scheme 4",
-        subname:"subname 4",
-        path:"/"
+        schemeName:"Others",
+        subname:"अनुसूचित जनजाति",
+        path:"/",
+        number:2
     },
-    {
-        schemeName:"Scheme 5",
-        subname:"subname 5",
-        path:"/"
-    }
+
 
 ]

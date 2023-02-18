@@ -1,5 +1,10 @@
 .service-main{
     position: relative;
+    background: #eeeeee;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .service-main a{
 text-decoration: none;
@@ -10,6 +15,7 @@ color: rgb(36, 35, 35);
 }
 .sericescard .card-text{
     font-size: 18px;
+
 }
 .service-main .owl-theme  .owl-prev, .service-main .owl-theme .owl-next {
     position: absolute;

@@ -4,9 +4,9 @@ import './CustomBreadCumb.css';
 const CustomBreadCumb = (props) => {
   const breadname= props.breadname;
   return (
-<div class="bcca-breadcrumb">
-  <div class="bcca-breadcrumb-item" >{breadname}</div>
-  <div class="bcca-breadcrumb-item" ><Link to="/">Home</Link></div>
+<div className="bcca-breadcrumb">
+  <div className="bcca-breadcrumb-item" >{breadname}</div>
+  <div className="bcca-breadcrumb-item" ><Link to="/">Home</Link></div>
 </div>
   )
 }

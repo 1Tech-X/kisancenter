@@ -13,11 +13,7 @@ const Home = (props) => {
     <div>
         <TopHeader />
         <MidHeader />
-        <NavbarMenu 
-     
-        
-        subscheme="subscheme"
-        
+        <NavbarMenu     
        />
         <Container>
           <Hero />
